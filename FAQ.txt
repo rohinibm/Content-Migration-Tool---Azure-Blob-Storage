@@ -1,0 +1,16 @@
+
+1.	What is this tool about?
+Azure Migration Tool is built for the initial migration (or to manage heavy one-time upload of contents) to Azure Blob Storage. The Pause/resume and error handling features would help the organization admins who otherwise would need to perform copying and tracking of large volume of content manually
+
+2.	What is different from AZCopy, Azure Export/Import Service or other Azure Storage explorers and this tool?
+This tool is built to perform massive content migration (in hundreds of TBs/PBs) with high reliability, ease and high speed.
+The tool allows for dynamic Blob creation, Pause/Resume of uploads, Separate list of Failed files and option for Restart
+
+3.	How can I get the Storage Account name and Access Key?
+Once a storage account is created under the Azure Subscription, under Access Control option, you can see 2 Access Keys. You can use any of those 2 values and test connection when you want to initiate the migration.
+
+4.	How can I troubleshoot any errors in the migration?
+Depending on the type of issue that caused the upload failure, the Failed Files tab will have details in comment section. (for e.g. Source File not found, Network disconnected etc.)
+
+5.	What tool to use if I want to view/download the files once they are migrated to Azure Blob Storage?
+Once all the content is migrated to Azure blobs, you can use Microsoft Azure Storage Explorer or any other Azure Explorers available in Azure Marketplace to view/update/download files.
